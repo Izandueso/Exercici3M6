@@ -39,7 +39,7 @@ public class LleguirFitxerAleatori {
 			//Llegeix Preu
 			preu = aleatoriFile.readFloat();
 			//Sortida de les dades de cada llibre
-			System.out.println("ID: "+id+"\nTítol: "+titols+"\nISBN: "+isbn+"\nAutor: "+autors+"\nEditrorial: 							"+editorials+"\nPreu: "+preu+"€\n\n");
+			System.out.println("ID: "+id+"\nNom: "+titols+"\nEdad: "+isbn+"\nCiutat: "+autors+"\nEstudis: "+editorials+"\nSou: "+preu+"€\n\n");
 			//S'ha de posicionar l'apuntador al següent llibre
 			apuntador += 222;
 			//Si coincideix on s'està apuntat amb el final del fitxer, sortim

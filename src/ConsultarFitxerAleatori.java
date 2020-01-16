@@ -3,7 +3,7 @@ import java.util.*;
 
 public class ConsultarFitxerAleatori {
 	public static void main(String[] args) throws IOException {
-		File fitxer = new File("/home/user/Escriptori/llibres");
+		File fitxer = new File("F:/persones.txt");
 		//Crea un flux (stream) d'arxiu d'accés aleatori només lectura
 		RandomAccessFile aleatoriFile = new RandomAccessFile(fitxer, "r");
 		
@@ -44,7 +44,7 @@ public class ConsultarFitxerAleatori {
 			//Llegeix Preu
 			preu = aleatoriFile.readFloat();
 			//Sortida de les dades de cada llibre
-			System.out.println("ID: "+id+"\nTítol: "+titols+"\nISBN: "+isbn+"\nAutor: "+autors+"\nEditrorial: 							"+editorials+"\nPreu: "+preu+"€\n\n");
+			System.out.println("ID: "+id+"\nNom: "+titols+"\nEdad: "+isbn+"\nCiutat: "+autors+"\nEstudis: "+editorials+"\nSou: "+preu+"€\n\n");
 		}
 		aleatoriFile.close();//Tancar el fitxer
 	}
